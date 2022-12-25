@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Atlassian-Build-Date: 2022-12-25T01:53:54+0200
+Atlassian-Plugin-Key: com.example.ampstutorial.fecrutwitter
+Bnd-LastModified: 1671926035021
+Build-Jdk: 1.8.0_292
+Built-By: ugnius.vaznys@vinted.com
+Bundle-Description: This is the com.example.ampstutorial:fecrutwitter pl
+ ugin for Atlassian FishEye/Crucible.
+Bundle-DocURL: http://www.example.com/
+Bundle-ManifestVersion: 2
+Bundle-Name: fecrutwitter
+Bundle-SymbolicName: com.example.ampstutorial.fecrutwitter
+Bundle-Vendor: Example Company
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.example.ampstutorial.api;version="1.0.0"
+Import-Package: org.eclipse.gemini.blueprint.context;resolution:=optiona
+ l,org.eclipse.gemini.blueprint.service.exporter;resolution:=optional,or
+ g.eclipse.gemini.blueprint.service.exporter.support;resolution:=optiona
+ l,org.eclipse.gemini.blueprint.service.importer.support;resolution:=opt
+ ional,com.atlassian.annotations.nonnull,com.atlassian.plugin,com.atlass
+ ian.plugin.module,com.atlassian.plugin.osgi.external,com.atlassian.sal.
+ api,com.example.ampstutorial.api;version="[1.0,2)",javax.annotation,jav
+ ax.servlet,javax.servlet.http,org.osgi.framework,org.slf4j,org.springfr
+ amework.beans,org.springframework.beans.factory,org.springframework.bea
+ ns.factory.config,org.springframework.cglib.core,org.springframework.cg
+ lib.proxy,org.springframework.cglib.reflect,org.springframework.context
+ ,org.springframework.context.annotation,org.springframework.core.type
+Originally-Created-By: Apache Maven Bundle Plugin
+Spring-Context: *
+Tool: Bnd-3.5.0.201709291849

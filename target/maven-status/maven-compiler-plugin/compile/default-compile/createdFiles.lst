@@ -1,0 +1,4 @@
+com/example/ampstutorial/impl/MyPluginComponentImpl.class
+com/example/ampstutorial/api/MyPluginComponent.class
+com/example/ampstutorial/config/MyPluginJavaConfig.class
+com/example/ampstutorial/TwitterSettingsServlet.class
